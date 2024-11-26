@@ -10,7 +10,7 @@ export default function Register({ role }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/user/singup', {
+      const response = await fetch('https://yt-back.vercel.app/user/singup', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
