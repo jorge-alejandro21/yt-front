@@ -44,7 +44,7 @@ export default function YoutubePage({user}) {
   useEffect(() => {
     const fetchOtherVideos = async () => {
       try {
-        const response = await fetch('https://yt-back.vercel.app/getOtherVideos', {
+        const response = await fetch('https://yt-back.vercel.app/videos/getOtherVideos', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ userId: user._id }),
